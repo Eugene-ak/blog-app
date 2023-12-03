@@ -1,3 +1,9 @@
+# Blog App
+This a blog web application built using ReactJs and css
+
+** Entry point -> App.js
+** Stylesheets -> App.css
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
