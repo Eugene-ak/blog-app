@@ -4,6 +4,9 @@ This a blog web application built using ReactJs and css
 ** Entry point -> App.js
 ** Stylesheets -> App.css
 
+# Design file
+https://www.figma.com/file/MLIPJVkGAYhY2rX1Rxtmlx/Free-Blog-Template--%7C-Modern-%26-Creative-design-(Community)?type=design&node-id=2101-22058&mode=design&t=gIt9IIYFmXCnEsnk-0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
