@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import BlogCard from './BlogCard';
 
 const Main = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <h2>Latest Post</h2>
+      <BlogCard />
+    </>
   )
 }
 
-export default Main
+export default Main;
