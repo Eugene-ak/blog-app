@@ -4,7 +4,7 @@ import blogImage from '../../assets/blogImage.jpeg'
 const BlogImage = () => {
     return (
         <>
-            <img src={blogImage} alt='' />
+            <img className='blog-img' src={ blogImage } alt='' />
         </>
     )
 }

@@ -3,10 +3,20 @@ import BlogCard from './BlogCard';
 
 const Main = () => {
   return (
-    <>
+    <section>
       <h2>Latest Post</h2>
-      <BlogCard />
-    </>
+      <div className='blog-posts'>
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
+    </section>
   )
 }
 

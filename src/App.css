@@ -2,6 +2,8 @@
   --primary-color: #141624;
   --secondary-color: white;
   --secondary-bg: #F4F4F5;
+  --card-border-color: #E8E8EA;
+  --author-font-color: #97989F;
 }
 
 .App {
@@ -105,9 +107,10 @@ nav {
   position: absolute;
   left: 370px;
   top: 520px;
+  box-shadow: 5px 5px 15px gray;
 }
 
-.hero-message h6 {
+.plates h6 {
   background-color: #4B6BFB;
   color: var(--secondary-color);
   width: max-content;
@@ -116,7 +119,54 @@ nav {
   margin: 0;
 }
 
+.author {
+  width: 100%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 15% 35% 50%;
+  align-items: center;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: var(--author-font-color);
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+
 .hero-message h3 {
   margin: 5px 0;
   font-size: 25px;
+}
+
+.blog-posts {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap ;
+}
+
+.blog-card {
+  width: 20vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  border: 0.1px solid var(--card-border-color);
+  border-radius: 5px;
+}
+
+.blog-img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.blog-details {
+  width: 300px;
+  margin: 20px 0;
 }
