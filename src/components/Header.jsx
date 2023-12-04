@@ -3,7 +3,7 @@ import Logo from '../constants/images/Logo';
 
 const Header = () => {
     return (
-        <>
+        <header>
             <nav>
                 <div className='logo'>
                     <Logo />
@@ -22,7 +22,7 @@ const Header = () => {
                     <button className='color-mode-btn'><button></button></button>
                 </div>
             </nav>
-        </>
+        </header>
     )
 }
 

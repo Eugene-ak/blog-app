@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --primary-color: #141624;
+  --primary-color: white;
+  --primary-bg: #141624;
+  --secondary-bg: #F6F6F7;
+  --tertiary-bg: #4B6BFB;
   --secondary-color: white;
-  --secondary-bg: #F4F4F5;
   --card-border-color: #E8E8EA;
   --author-font-color: #97989F;
+  --footer-font-color: #696A75;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Itim', cursive;
 }
 
-.App {
+header, main {
   background-color: var(--secondary-color);
-  padding: 0 200px;
-  color: var(--primary-color);
+  padding: 0 15rem;
+  color: var(--primary-bg);
+  font-family: var(--primary-font-family);
 }
 
 nav {
   width: 100%;
-  height: 12vh;
+  height: max-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,8 +34,8 @@ nav {
 }
 
 .logo-image {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 120px;
 }
 
 .nav-list {
@@ -44,7 +52,7 @@ nav {
 
 .nav-list ul li a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-bg);
 }
 
 .nav-search {
@@ -89,11 +97,11 @@ nav {
   height: 90vh;
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 1rem 0rem;
 }
 
 .hero-image {
-  width: 80%;
+  width: 65%;
   height: 80vh;
   border-radius: 10px;
 }
@@ -101,17 +109,17 @@ nav {
 .hero-message {
   background-color: var(--secondary-color);
   width: 25%;
-  height: 150px;
+  height: max-content;
   padding: 30px;
   border-radius: 7px;
   position: absolute;
-  left: 370px;
-  top: 520px;
+  left: 20rem;
+  top: 30rem;
   box-shadow: 5px 5px 15px gray;
 }
 
 .plates h6 {
-  background-color: #4B6BFB;
+  background-color: var(--tertiary-bg);
   color: var(--secondary-color);
   width: max-content;
   padding: 7px;
@@ -141,17 +149,21 @@ nav {
   font-size: 25px;
 }
 
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .blog-posts {
   width: 100%;
   height: max-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap ;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .blog-card {
-  width: 20vw;
+  width: 85%;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -162,11 +174,116 @@ nav {
 }
 
 .blog-img {
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
 }
 
 .blog-details {
-  width: 300px;
+  width: 100%;
   margin: 20px 0;
+}
+
+.view-more-btn {
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  border: 3px solid var(--card-border-color);
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-family: var(--primary-font-family);
+}
+
+.view-more-btn:hover {
+  background-color: var(--tertiary-bg);
+  color: var(--secondary-color);
+}
+
+.footer {
+  height: max-content;
+  margin-top: 30px;
+  background-color: var(--secondary-bg);
+  font-size: 16px;
+  color: var(--footer-font-color);
+  padding: 4rem 15rem 1rem;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 30% 10% 10% 40%;
+  justify-content: space-around;
+}
+
+.footer-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-quick-links, .footer-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-quick-links ul, .footer-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-newsletter {
+  width: 100%;
+  height: 90%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-newsletter h3 {
+  margin-bottom: 0.1rem;
+}
+
+.footer-newsletter form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-newsletter form input {
+  padding: 0.8rem 1rem;
+  margin: 0.15rem 0;
+  border-radius: 5px;
+}
+
+.footer-newsletter form input[type="submit"] {
+  border: none;
+  background-color: var(--tertiary-bg);
+  color: var(--primary-color);
+  font-size: 17px;
+}
+
+.copywrite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--card-border-color);
+}
+
+.copywrite .first-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copywrite .second-section span {
+  padding: 0 20px;
+}
+
+.copywrite .second-section span:nth-child(2) {
+  border-left: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--card-border-color);
 }
