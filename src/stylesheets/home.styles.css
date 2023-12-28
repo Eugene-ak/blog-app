@@ -1,26 +1,25 @@
 .hero {
-  width: 100%;
+  width: 60%;
   height: 75vh;
   display: flex;
   justify-content: center;
   margin: 0 auto 5rem;
   position: relative;
-}
-
-.hero-image {
+  background-image: url(../assets/heroImage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
 }
 
 .hero-message {
   background-color: var(--secondary-color);
-  width: 25%;
+  width: 45%;
   height: max-content;
   padding: 30px;
   border-radius: 7px;
   position: absolute;
-  left: 10rem;
-  /* top: 30rem; */
-  bottom: 10px;
+  left: 3rem;
+  bottom: -50px;
   box-shadow: 5px 5px 15px gray;
 }
 
