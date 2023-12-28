@@ -13,11 +13,17 @@
   --secondary-font-family: 'Itim', cursive;
 }
 
-header, main {
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--secondary-color);
-  padding: 0 15rem;
   color: var(--primary-bg);
   font-family: var(--primary-font-family);
+}
+
+header, main {
+  padding: 0 10rem;  
 }
 
 nav {
@@ -90,113 +96,6 @@ nav {
   border: none;
   border-radius: 100%;
   background-color: var(--secondary-color);
-}
-
-.hero {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0rem;
-}
-
-.hero-image {
-  width: 65%;
-  height: 80vh;
-  border-radius: 10px;
-}
-
-.hero-message {
-  background-color: var(--secondary-color);
-  width: 25%;
-  height: max-content;
-  padding: 30px;
-  border-radius: 7px;
-  position: absolute;
-  left: 20rem;
-  top: 30rem;
-  box-shadow: 5px 5px 15px gray;
-}
-
-.plates h6 {
-  background-color: var(--tertiary-bg);
-  color: var(--secondary-color);
-  width: max-content;
-  padding: 7px;
-  border-radius: 5px;
-  margin: 0;
-}
-
-.author {
-  width: 100%;
-  height: min-content;
-  display: grid;
-  grid-template-columns: 15% 35% 50%;
-  align-items: center;
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
-  color: var(--author-font-color);
-}
-
-.avatar {
-  width: 30px;
-  height: 30px;
-}
-
-.hero-message h3 {
-  margin: 5px 0;
-  font-size: 25px;
-}
-
-.main-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.blog-posts {
-  width: 100%;
-  height: max-content;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
-.blog-card {
-  width: 85%;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 20px;
-  border: 0.1px solid var(--card-border-color);
-  border-radius: 5px;
-}
-
-.blog-img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.blog-details {
-  width: 100%;
-  margin: 20px 0;
-}
-
-.view-more-btn {
-  margin: auto;
-  width: max-content;
-  height: max-content;
-  background-color: white;
-  border: 3px solid var(--card-border-color);
-  border-radius: 5px;
-  padding: 1rem 1.5rem;
-  font-family: var(--primary-font-family);
-}
-
-.view-more-btn:hover {
-  background-color: var(--tertiary-bg);
-  color: var(--secondary-color);
 }
 
 .footer {

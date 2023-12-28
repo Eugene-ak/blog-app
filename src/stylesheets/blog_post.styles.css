@@ -1,0 +1,23 @@
+.hero {
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    position: relative;
+    background-image: url(../assets/heroImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  .hero-image {
+    border-radius: 10px;
+  }
+
+  .hero-message {
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+  }
