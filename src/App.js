@@ -1,12 +1,22 @@
 import './App.css';
-// import HomePage from './pages/HomePage';
-import PostsPage from './pages/PostsPage';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import Layout from './constants/PageLayout/Layout'
+import HomePage from './pages/HomePage'
+import SinglePostsPage from './pages/SinglePostsPage';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout />}>
+      <Route index element={<HomePage />} />
+      <Route path='SinglePostsPage' element={<SinglePostsPage />} />
+    </Route>
+  )
+)
 
 function App() {
   return (
     <div className="App">
-      {/* <HomePage /> */}
-      <PostsPage />
+      <RouterProvider router={router} />
     </div>
   );
 }

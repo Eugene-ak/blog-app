@@ -1,17 +1,12 @@
-import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Hero';
-import Main from '../components/Main';
-import Footer from '../components/Footer';
+import Hero from '../components/HomeHero';
+import HomeMain from '../components/HomeMain';
 import '../stylesheets/home.styles.css';
 
 const HomePage = () => {
     return (
         <>
-            <Header />
             <Hero />
-            <Main />
-            <Footer />
+            <HomeMain />
         </>
     )
 }

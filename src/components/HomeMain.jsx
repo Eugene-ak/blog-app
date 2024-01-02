@@ -1,7 +1,6 @@
-import React from 'react';
 import BlogCard from './BlogCard';
 
-const Main = () => {
+const HomeMain = () => {
   return (
     <main>
       <section className='main-section'>
@@ -23,4 +22,4 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default HomeMain;

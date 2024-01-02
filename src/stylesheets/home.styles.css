@@ -1,6 +1,6 @@
-.hero {
-  width: 60%;
-  height: 75vh;
+.home-hero {
+  width: 70%;
+  height: 40rem;
   display: flex;
   justify-content: center;
   margin: 0 auto 5rem;

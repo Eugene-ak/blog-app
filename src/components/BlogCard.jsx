@@ -1,4 +1,3 @@
-import React from 'react';
 import BlogImage from '../constants/images/BlogImage';
 import BlogPlates from '../constants/Texts/BlogPlates';
 

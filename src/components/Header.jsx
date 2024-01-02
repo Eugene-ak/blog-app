@@ -1,5 +1,5 @@
-import React from 'react'
 import Logo from '../constants/images/Logo';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,11 +10,9 @@ const Header = () => {
                 </div>
                 <div className='nav-list'>
                     <ul>
-                        <li><a href='./pages/HomePage'>Home</a></li>
-                        <li><a href='./pages/BlogPage'>Blog</a></li>
-                        <li><a href='./pages/SinglePostsPage'>Single Post</a></li>
-                        <li><a href='./pages/PostsPage'>Posts</a></li>
-                        <li><a href='./pages/contactPage'>Contact</a></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        <li><NavLink to='SinglePostsPage/'>Single Post</NavLink></li>
+                        <li><NavLink to='ContactPage/'>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className='nav-search'>

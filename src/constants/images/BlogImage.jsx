@@ -1,4 +1,3 @@
-import React from 'react';
 import blogImage from '../../assets/blogImage.jpeg'
 
 const BlogImage = () => {
