@@ -16,7 +16,6 @@
 .post-image {
     width: 55rem;
     height: 27.5rem;
-    background-color: aqua;
     background-image: url(../assets/postImage.jpg);
     background-size: contain;
     background-repeat: no-repeat;
