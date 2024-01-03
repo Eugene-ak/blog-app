@@ -1,0 +1,30 @@
+.single-posts-main h6 {
+    font-size: 1em;
+}
+
+.single-posts-main h3 {
+    font-size: 1.8rem;
+}
+
+.single-posts-main .author {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-image {
+    width: 55rem;
+    height: 27.5rem;
+    background-color: aqua;
+    background-image: url(../assets/postImage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2rem auto;
+    border-radius: 20px;
+}
+
+.post-text {
+    margin: 5rem;
+    font-size: 1.2rem;
+}

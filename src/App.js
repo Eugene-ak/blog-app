@@ -9,6 +9,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route index element={<HomePage />} />
       <Route path='SinglePostsPage' element={<SinglePostsPage />} />
+      <Route path='*' element={<h1>Not Found</h1>} />
     </Route>
   )
 )

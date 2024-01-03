@@ -5,7 +5,6 @@
   --primary-bg: #141624;
   --secondary-bg: #F6F6F7;
   --tertiary-bg: #4B6BFB;
-  --secondary-color: white;
   --card-border-color: #E8E8EA;
   --author-font-color: #97989F;
   --footer-font-color: #696A75;
@@ -23,7 +22,9 @@
 }
 
 header, main {
-  padding: 0 10rem;  
+  width: 70%;
+  padding: 0 15%;
+  color: #3B3C4A;
 }
 
 nav {
@@ -59,6 +60,15 @@ nav {
 .nav-list ul li a {
   text-decoration: none;
   color: var(--primary-bg);
+  padding: 0.5rem;
+}
+
+.nav-list ul li a:hover {
+  border-bottom: 3px solid var(--tertiary-bg);
+}
+
+.active {
+  border-bottom: 3px solid var(--primary-bg);
 }
 
 .nav-search {
@@ -73,14 +83,18 @@ nav {
   width: 60%;
   height: 30px;
   background-color: var(--secondary-bg);
-  border: none;
+  border: 1px solid var(--primary-bg);
   border-radius: 5px;
   padding: 0.2rem 1rem;
 }
 
+.search-bar:active {
+  border: 1px solid var(--tertiary-bg);
+}
+
 .color-mode-btn {
   width: 15%;
-  height: 4vh;
+  height: 3.8vh;
   border: none;
   border-radius: 20px;
   background-color: var(--secondary-bg);
@@ -94,8 +108,8 @@ nav {
   width: 60%;
   height: 90%;
   border: none;
-  border-radius: 100%;
-  background-color: var(--secondary-color);
+  border-radius: 20px;
+  background-color: var(--tertiary-bg);
 }
 
 .footer {
