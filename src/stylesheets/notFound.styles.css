@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: auto;
     font-size: 1.8rem;
+    align-items: center;
 }
 
 .not-found-main h1 {

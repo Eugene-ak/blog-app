@@ -113,26 +113,36 @@ nav {
   justify-content: flex-start;
 }
 
-.color-mode-btn button {
+.color-mode-btn div {
   width: 20px;
   height: 20px;
   border: none;
   border-radius: 20px;
-  background-color: var(--tertiary-bg);
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-mode-btn div svg {
+  color: var(--author-font-color);
+  width: 1em;
 }
 
 .dark-mode {
-  transform: translateX(20px);
+  transform: translateX(15px);
   background-color: white;
+  transition: 0.5s;
 }
 
 .footer {
+  width: 70%;
+  padding: 5rem 15% 0;
   height: max-content;
   margin-top: 30px;
   background-color: var(--secondary-bg);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--footer-font-color);
-  padding: 4rem 15rem 1rem;
 }
 
 .summary {
