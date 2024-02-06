@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: white;
+  --primary-bg: #141624;
+  --secondary-bg: #F6F6F7;
+  --tertiary-bg: #4B6BFB;
+  --card-border-color: #E8E8EA;
+  --author-font-color: #97989F;
+  --footer-font-color: #696A75;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Itim', cursive;
+}
+
+* {
+  font-family: var(--primary-font-family);
+  box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--secondary-bg);
+}
+
+.dashboard section:first-child {
+  width: 20%;
+  height: 100vh;
+  /* background-color: var(--tertiary-bg); */
+  background-image: linear-gradient(to bottom right, red, blue);
+  border-top-right-radius: 30px;
+}
+
+.dashboard section nav {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard section nav .logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.dashboard section nav ul {
+  height: 50%;
+  color: var(--primary-color);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: var(--secondary-font-family);
+}
+
+.dashboard section:last-child {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard section header {
+  width: 100%;
+  height: 7rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+header .user-message {
+  width: 70%;
+  padding: 0 2rem;
+  margin: 0 0.5rem;
+  border-right: 2px solid var(--card-border-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-message div {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message h1 {
+  margin: 0;
+}
+
+.user-message p {
+  margin: 0
+}
+
+.notification-icon {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+header .login-details {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login-details img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+.login-details div h2 {
+  margin: 0;
+}
+
+.login-details div p {
+  margin: 0;
+  padding: 0.4rem 0;
+}

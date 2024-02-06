@@ -5,15 +5,22 @@ import HomePage from './pages/HomePage'
 import SinglePostsPage from './pages/SinglePostsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ContactPage from './pages/ContactPage';
+import Dashboard from './cms/Dashboard';
+import Overview from './cms/Overview';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route index element={<HomePage />} />
-      <Route path='SinglePostsPage' element={<SinglePostsPage />} />
-      <Route path='ContactPage' element={<ContactPage />} />
-      <Route path='*' element={<NotFoundPage />} />
-    </Route>
+    <>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path='SinglePostsPage' element={<SinglePostsPage />} />
+        <Route path='ContactPage' element={<ContactPage />} />
+        <Route path='*' element={<NotFoundPage />} />
+      </Route>
+      <Route path='/admin' element={<Dashboard />}>
+        <Route index element={<Overview />} />
+      </Route>
+    </>
   )
 )
 
