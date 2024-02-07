@@ -76,6 +76,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--card-border-color);
+  background-image: linear-gradient(rgb(0, 236, 253), blue);
 }
 
 header .user-message {

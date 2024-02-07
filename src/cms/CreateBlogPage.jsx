@@ -5,11 +5,13 @@ const CreateBlogPage = () => {
     <main className='create-page'>
       <h1>Create New Post</h1>
       <form className="create-form">
-        <input type='text' placeholder='Heading'/>
-        <input type='text' placeholder='Field'/>
-        <input type='text' placeholder='Content'/>
-        <input type='text' placeholder='Author'/>
-        <input type='date' />
+        <div>
+          <input type='text' placeholder='Heading' />
+          <input type='text' placeholder='Field' />
+          <input type='date' />
+          <input type='text' placeholder='Author' />
+          <textarea type='text' placeholder='Content'>Content</textarea>
+        </div>
         <input type='submit' name='create' value={"Create"} />
       </form>
     </main>

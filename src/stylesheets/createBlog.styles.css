@@ -8,16 +8,56 @@ main.create-page {
 
 main.create-page h1 {
   font-size: 2rem;
+  margin: 15px auto;
 }
 
 form.create-form {
   width: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 auto;
 }
 
-form.create-form input {
-  width: 40%;
+form.create-form div {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+form.create-form div input {
+  width: 23rem;
   height: 3rem;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+form.create-form div textarea {
+  width: 100%;
+  height: 5rem;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 10px;
+}
+
+form.create-form input[type="submit"] {
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: none;
+  color: var(--primary-color);
+  background-image: linear-gradient(rgb(0, 236, 253), blue);
+}
+
+form.create-form input[type="submit"]:hover {
+  background-image: linear-gradient(red, blue);
 }
