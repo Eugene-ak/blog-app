@@ -127,6 +127,11 @@
   width: 100%;
 }
 
+.blog-links {
+  color: var(--primary-bg);
+  text-decoration: none;
+}
+
 .blog-card {
   width: 98%;
   min-width: 10rem;

@@ -1,15 +1,18 @@
-import BlogImage from '../constants/images/BlogImage';
-import BlogPlates from '../constants/Texts/BlogPlates';
+import { Link } from "react-router-dom";
+import BlogImage from "../constants/images/BlogImage";
+import BlogPlates from "../constants/Texts/BlogPlates";
 
 const BlogCard = () => {
-    return (
-        <div className='blog-card'>
-            <BlogImage />
-            <div className='blog-details'>
-                <BlogPlates />
-            </div>
+  return (
+    <Link className="blog-links" to="SinglePostsPage/">
+      <div className="blog-card">
+        <BlogImage />
+        <div className="blog-details">
+          <BlogPlates />
         </div>
-    )
-}
+      </div>
+    </Link>
+  );
+};
 
 export default BlogCard;
