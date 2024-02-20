@@ -1,4 +1,4 @@
-import Logo from '../constants/images/Logo';
+import Logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <div className='copywrite'>
                 <div className='first-section'>
-                    <Logo />
+                    <img src={Logo} alt='logo' />
                     <p>&copy; Copyright 2023</p>
                 </div>
                 <div className='second-section'>

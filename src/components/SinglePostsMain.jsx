@@ -1,11 +1,12 @@
 import BlogPlates from '../constants/Texts/BlogPlates'
+import PostImage from '../assets/postImage.jpg'
 import '../stylesheets/singlePosts.styles.css'
 
 const SinglePostsMain = () => {
     return (
         <main className='single-posts-main'>
             <BlogPlates />
-            <div className="post-image"></div>
+            <img className='post-image' src={PostImage} alt='thumbnail' />
             <article className='post-text'>
                 <p>
                     Traveling is an enriching experience that opens up new horizons, exposes us to different cultures,
