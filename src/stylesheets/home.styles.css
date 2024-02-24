@@ -92,7 +92,7 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 1rem;
   }
 }
@@ -104,9 +104,7 @@
     display: grid;
     grid-template-columns: 45% 45%;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
-    margin: auto;
   }
 }
 
@@ -116,10 +114,8 @@
     height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    margin: auto;
   }
 }
 
