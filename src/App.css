@@ -22,7 +22,7 @@
   font-family: var(--primary-font-family);
 }
 
-header {
+.blog-header {
   width: 100%;
   color: #3B3C4A;
   position: sticky;
@@ -33,7 +33,7 @@ header {
 
 /* Entire app styles */
 @media screen and (min-width: 800px) {
-  header {
+  .blog-header {
     padding: 0 20%;
   }
 
@@ -45,7 +45,7 @@ header {
 }
 
 @media screen and (min-width: 501px) and (max-width: 799px) {
-  header {
+  .blog-header {
     padding: 0 10%;
   }
 
@@ -57,7 +57,7 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-  header {
+  .blog-header {
     padding: 0 10%;
   }
 
