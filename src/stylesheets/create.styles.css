@@ -1,51 +1,43 @@
 main.create-page {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem 3rem;
+  background-color: var(--primary-color);
 }
 
 main.create-page h1 {
   font-size: 2rem;
-  margin: 15px auto;
+  margin: 1rem auto;
 }
 
 form.create-form {
-  width: 100%;
-  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin: 0 auto;
 }
 
 form.create-form div {
-  width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 4rem;
 }
 
-form.create-form div input {
-  width: 23rem;
-  height: 3rem;
-  border-radius: 20px;
+form.create-form input {
+  width: 30rem;
+  height: 4rem;
+  border-radius: 10px;
   padding: 1rem;
 }
 
-form.create-form div textarea {
+form.create-form textarea {
   width: 100%;
-  height: 5rem;
-  border-radius: 20px;
+  height: 8rem;
+  border-radius: 10px;
   padding: 1rem;
-  margin: 10px;
 }
 
 form.create-form input[type="submit"] {
@@ -56,8 +48,9 @@ form.create-form input[type="submit"] {
   border: none;
   color: var(--primary-color);
   background-image: linear-gradient(rgb(0, 236, 253), blue);
+  letter-spacing: 2px;
 }
 
 form.create-form input[type="submit"]:hover {
-  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(blue, rgb(0, 236, 253));
 }

@@ -1,29 +1,32 @@
-import "../stylesheets/overview.styles.css"
+import "../stylesheets/overview.styles.css";
 
 const Overview = () => {
   return (
     <main className="overview">
-      <h1>Overview</h1>
       <div className="top-row">
-        <div>
-          <p>Total Number of Posts</p>
-          <span>0</span>
-        </div>
-        <div>
-          <p>Total Number of Views</p>
-          <span>0</span>
-        </div>
-        <div>
-          <p>Total Number of Comments</p>
-          <span>0</span>
-        </div>
+        <h1>Overview</h1>
+        <span className="buttons">
+          <button>New Post</button>
+          <button>All Posts</button>
+        </span>
       </div>
+
       <div className="bottom-row">
-        <button>Create New Post</button>
-        <button>View All Posts</button>
+        <div>
+          <p>Total Posts</p>
+          <span>0</span>
+        </div>
+        <div>
+          <p>Total Views</p>
+          <span>0</span>
+        </div>
+        <div>
+          <p>Total Comments</p>
+          <span>0</span>
+        </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Overview
+export default Overview;

@@ -7,7 +7,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import ContactPage from './pages/ContactPage';
 import Dashboard from './cms/Dashboard';
 import Overview from './cms/Overview';
-import CreateBlogPage from './cms/CreateBlogPage';
+import Create from './cms/Create';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,8 +19,8 @@ const router = createBrowserRouter(
         <Route path='*' element={<NotFoundPage />} />
       </Route>
       <Route path='/admin' element={<Dashboard />}>
-        <Route index element={<Overview />} />
-        <Route path='createPost' element={<CreateBlogPage />} />
+        <Route path='overview' element={<Overview />} />
+        <Route path='add-post' element={<Create />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     </>

@@ -1,0 +1,66 @@
+main.overview {
+  width: 100%;
+  padding: 0 3rem;
+  background-color: var(--primary-color);
+}
+
+.overview h1 {
+  font-size: 2rem;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--tertiary-bg);
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+  font-size: 1em;
+}
+
+.bottom-row {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.bottom-row div {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--card-border-color);
+  border-left: 5px solid var(--tertiary-bg);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-row div p {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 1rem; */
+  font-weight: 500;
+}
+
+.bottom-row div span {
+  width: max-content;
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 1.5em;
+}

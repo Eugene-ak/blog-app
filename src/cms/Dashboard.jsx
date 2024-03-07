@@ -1,7 +1,7 @@
 import "../stylesheets/dashboard.styles.css";
 import avatar from "../assets/avatar3.jpg";
 import logo from "../assets/logo.png";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -9,11 +9,9 @@ const Dashboard = () => {
       <nav>
         <img src={logo} alt="logo" className="logo" />
         <ul>
-          <li>Create</li>
-          <li>Find</li>
-          <li>Update</li>
-          <li>Delete</li>
-          <li>Users</li>
+          <li><NavLink to="overview">Overview</NavLink></li>
+          <li><NavLink to="add-post">Add post</NavLink></li>
+          <li><NavLink to="view-posts">View posts</NavLink></li>
         </ul>
       </nav>
       
